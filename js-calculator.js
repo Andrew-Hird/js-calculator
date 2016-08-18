@@ -21,7 +21,6 @@ function oneNum() {
 one = 1
 answer += one
 document.getElementById("display").innerHTML = one
-console.log(document.getElementById("display").innerHTML)
 }
 
 function twoNum() {
@@ -117,7 +116,7 @@ function func() {
 }
 
   function blank() {
-    document.getElementById("display").innerHTML = "Let's Calculate!"
+    document.getElementById("display").innerHTML = "0"
     document.getElementById("count").innerHTML = 0
     answer = ""
   }

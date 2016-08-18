@@ -3,47 +3,39 @@
   <head>
     <title>JS CALCULATOR</title>
     <link rel="stylesheet" href="js-calculator.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-
+    <h1>Calculator</h1>
     <div class="calculator">
         <div class="button-board">
           <table>
             <tr>
               <td><button id="clear">AC</button></td>
-              <td><button></button></td>
-              <td><button id="remainder" onclick="remainder()"></button></td>
+            </tr>
+            <tr>
+              <td><button id="seven" onclick="sevenNum()">7</button></td>
+              <td><button id="eight" onclick="eightNum()">8</button></td>
+              <td><button id="nine" onclick="nineNum()"> </button></td>
               <td><button id="divide" onclick="divideNum()">/</button></td>
             </tr>
             <tr>
-              <td><button id="seven" onclick="sevenNum()">7 </button></td>
-              <td><button id="eight" onclick="eightNum()">8 </button></td>
-              <td><button id="nine" onclick="nineNum()">9 </button></td>
-              <td><button id="multiply" onclick="multiplyNum()">* </button></td>
+              <td><button id="four" onclick="fourNum()">4</button></td>
+              <td><button id="five" onclick="fiveNum()">5</button></td>
+              <td><button id="six" onclick="sixNum()">6</button></td>
+              <td><button id="multiply" onclick="multiplyNum()">x </button></td>
             </tr>
             <tr>
-              <td><button id="four" onclick="fourNum()">4 </button></td>
-              <td><button id="five" onclick="fiveNum()">5 </button></td>
-              <td><button id="six" onclick="sixNum()">6 </button></td>
-              <td><button id="subtract" onclick="subtractNum()">- </button></td>
+              <td><button id="one" onclick="oneNum()">1</button></td>
+              <td><button id="two" onclick="twoNum()">2</button></td>
+              <td><button id="three" onclick="threeNum()">3</button></td>
+              <td><button id="subtract" onclick="subtractNum()">-</button></td>
             </tr>
             <tr>
-              <td><button id="one" onclick="oneNum()">1 </button></td>
-              <td><button id="two" onclick="twoNum()">2 </button></td>
-              <td><button id="three" onclick="threeNum()">3 </button></td>
-              <td><button id="add" onclick="addNum()">+ </button></td>
-            </tr>
-            <tr>
-              <td><button id="zero" onclick="zeroNum()">0 </button></td>
-              <td><button id="decimal" onclick="decimalNum()">. </button></td>
-              <td><button> </button></td>
+              <td><button id="zero" onclick="zeroNum()">0</button></td>
+              <td><button id="decimal" onclick="decimalNum()">.</button></td>
               <td><button id="compute">= </button></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td><button id="add" onclick="addNum()">+</button></td>
             </tr>
 
             <p id="display">

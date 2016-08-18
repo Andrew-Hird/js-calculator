@@ -1,4 +1,56 @@
-html, body {
-  height: 100%;
-  font-family: 'Open Sans', sans-serif
+
+body {
+  width: 300px;
+  border-style: solid;
+  border-radius: 5%;
+}
+button {
+  width: 65px;
+  height: 45px;
+  font-family: courier;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+h1 {
+  font-family: courier;
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 290px;
+  margin-bottom: 10px;
+}
+
+
+.calculator {
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: courier;
+  width: 290px;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5%;
+}
+.button-board {
+  padding: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+#display {
+  width: 280px;
+  font-size: 1.8em;
+  text-align: right;
+}
+
+#count {
+  font-size: 0.75em;
+  color: lightgrey;
+  width: 280px;
+  text-align: right;
+  /*border-style: solid;*/
 }
