@@ -17,8 +17,7 @@ button {
   width: 65px;
   height: 45px;
   font-family: button, Fallback, courier;
-  font-size: 2em;
-  text-align: center;
+  font-size: 1.6em;
   border-radius: 10px;
   background-color: #76c1fd;
 }
@@ -67,7 +66,6 @@ h1 {
   font-size: 3em;
   margin-top: 10px;
   margin-bottom: 10px;
-
 }
 
 #count {
