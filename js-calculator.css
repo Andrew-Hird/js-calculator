@@ -1,56 +1,77 @@
 
-body {
-  width: 300px;
-  border-style: solid;
-  border-radius: 5%;
+@font-face {
+  font-family: screen;
+  src: url(digital-7.ttf);
 }
+
+@font-face {
+  font-family: button;
+  src: url(Menlo.ttc);
+}
+body {
+  font-family: screen, Fallback, courier;
+}
+
 button {
   width: 65px;
   height: 45px;
-  font-family: courier;
-  font-size: 1.5em;
+  font-family: button, Fallback, courier;
+  font-size: 2em;
   text-align: center;
+  border-radius: 10px;
+  background-color: #76c1fd;
 }
 
 h1 {
-  font-family: courier;
-  text-align: center;
   display: block;
   margin: auto;
-  width: 290px;
+  text-align: center;
+  font-family: courier;
   margin-bottom: 10px;
 }
 
-
 .calculator {
+  background-color: #8c3b9a;
   display: block;
   margin: auto;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  font-family: courier;
   width: 290px;
+  height: 420px;
   border-style: solid;
-  border-width: thin;
-  border-radius: 5%;
+  border-radius: 7%;
+  padding: 10px;
 }
 .button-board {
+  display: block;
+  margin: auto;
   padding: 5px;
+  margin-top: 30px;
 }
 
 .hide {
   display: none;
 }
 
-#display {
-  width: 280px;
-  font-size: 1.8em;
+.screen {
+  background-color: lightgrey;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10px;
   text-align: right;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+#display {
+  font-size: 3em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
 }
 
 #count {
-  font-size: 0.75em;
-  color: lightgrey;
-  width: 280px;
-  text-align: right;
-  /*border-style: solid;*/
+  font-size: 1.5em;
+  color: grey;
+  margin-top: 5px;
+  margin-bottom: 10px;
+
 }

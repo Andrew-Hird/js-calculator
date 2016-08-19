@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <h1>Calculator</h1>
+    <!-- <h1>Calculator</h1> -->
     <div class="calculator">
         <div class="button-board">
           <table>
@@ -17,13 +17,13 @@
               <td><button id="seven" onclick="sevenNum()">7</button></td>
               <td><button id="eight" onclick="eightNum()">8</button></td>
               <td><button id="nine" onclick="nineNum()">9</button></td>
-              <td><button id="divide" onclick="divideNum()">/</button></td>
+              <td><button id="divide" onclick="divideNum()">&divide;</button></td>
             </tr>
             <tr>
               <td><button id="four" onclick="fourNum()">4</button></td>
               <td><button id="five" onclick="fiveNum()">5</button></td>
               <td><button id="six" onclick="sixNum()">6</button></td>
-              <td><button id="multiply" onclick="multiplyNum()">x </button></td>
+              <td><button id="multiply" onclick="multiplyNum()">x</button></td>
             </tr>
             <tr>
               <td><button id="one" onclick="oneNum()">1</button></td>
@@ -37,12 +37,11 @@
               <td><button id="compute">= </button></td>
               <td><button id="add" onclick="addNum()">+</button></td>
             </tr>
-
-            <p id="display">
-            Let's Calculate!</p>
-            <p id="count">0</p>
+            <div class="screen">
+              <p id="display">0</p>
+              <p id="count">0</p>
+          </div>
           </table>
-
         </div>
     </div>
     <script src="js-calculator.js"></script>
