@@ -46,6 +46,7 @@ h1 {
   margin: auto;
   padding: 5px;
   margin-top: 30px;
+  user-select: none;
 }
 
 .hide {
