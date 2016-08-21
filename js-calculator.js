@@ -6,8 +6,10 @@ window.onload = function() {
     for (var i = 0; i < buttons.length; i += 1) {
         if (buttons[i].innerHTML === '=') {
             buttons[i].addEventListener("click", calculate(i))
+            buttons[i].addEventListener("click", btnDing)
         } else {
             buttons[i].addEventListener("click", addValue(i))
+            buttons[i].addEventListener("click", btnAudio)
         }
     }
 
@@ -18,13 +20,21 @@ window.onload = function() {
             } else if (buttons[i].innerHTML === 'x') {
                 result.innerHTML += '*'
             } else {
-                result.innerHTML += buttons[i].innerHTML;
+                result.innerHTML += buttons[i].innerHTML
             }
         }
     }
 
     clear.onclick = function() {
         result.innerHTML = ''
+    }
+
+    function btnAudio() {
+        document.getElementById("click").play()
+    }
+
+    function btnDing() {
+        document.getElementById("ding").play()
     }
 
     function calculate(i) {
