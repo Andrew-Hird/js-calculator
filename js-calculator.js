@@ -9,7 +9,7 @@ window.onload = function() {
             buttons[i].addEventListener("click", btnDing)
         } else {
             buttons[i].addEventListener("click", addValue(i))
-            buttons[i].addEventListener("click", btnAudio)
+            buttons[i].addEventListener("click", btnClick)
         }
     }
 
@@ -27,9 +27,10 @@ window.onload = function() {
 
     clear.onclick = function() {
         result.innerHTML = ''
+        document.getElementById("clear").play()
     }
 
-    function btnAudio() {
+    function btnClick() {
         document.getElementById("click").play()
     }
 
