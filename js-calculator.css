@@ -1,12 +1,12 @@
 
 @font-face {
   font-family: screen;
-  src: url(digital-7.ttf);
+  src: url(fonts/digital-7.ttf);
 }
 
 @font-face {
   font-family: button;
-  src: url(Menlo.ttc);
+  src: url(fonts/Menlo.ttc);
 }
 body {
   font-family: screen, Fallback, courier;
